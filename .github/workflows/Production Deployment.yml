@@ -1,4 +1,4 @@
-name: Publish Website to CPanel
+name: Publish Website to CPanel Hosting
 on:
   push:
     branches:
