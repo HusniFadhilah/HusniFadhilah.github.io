@@ -109,7 +109,6 @@ footer{padding:30px 20px 48px;border-top:1px solid var(--line);color:var(--muted
 <footer><div class="w"><b>SAVEGEO Geospatial Format & Map Engine Lab</b><br>Client-side demo. Untuk production, dataset besar sebaiknya dinormalisasi dan disajikan lewat tile/data services.</div></footer>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="https://unpkg.com/maplibre-gl@6.11.2/dist/maplibre-gl.js"></script>
 <script src="https://unpkg.com/ol@10.6.1/dist/ol.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
@@ -117,6 +116,7 @@ footer{padding:30px 20px 48px;border-top:1px solid var(--line);color:var(--muted
 <script src="https://unpkg.com/cesium@1.132.0/Build/Cesium/Cesium.js"></script>
 
 <script type="module">
+import * as maplibregl from "https://unpkg.com/maplibre-gl@6.11.2/dist/maplibre-gl.mjs";
 import {kml as kmlToGeoJSON,gpx as gpxToGeoJSON,tcx as tcxToGeoJSON} from "https://unpkg.com/@tmcw/togeojson@7.1.2?module";
 import shp from "https://unpkg.com/shpjs@6.2.0/dist/shp.esm.js";
 import {fromBlob as geotiffFromBlob,fromUrl as geotiffFromUrl,writeArrayBuffer} from "https://cdn.jsdelivr.net/npm/geotiff@3.0.4/+esm";
